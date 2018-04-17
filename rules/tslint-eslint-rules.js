@@ -16,8 +16,8 @@ module.exports = {
     "ter-no-mixed-spaces-and-tabs": true,
     // 禁止多余的分号 (from ter)
     "no-extra-semi": true,
-    // 变量声明之后加一个空行
-    "ter-newline-after-var": [true, "always"],
+    // 变量声明之后加一个空行 have a bug
+    // "ter-newline-after-var": [true, "always"],
     // 使用两个空格缩进 (from ter)
     "ter-indent": [true, 2, {
       "SwitchCase": 1,
@@ -65,9 +65,9 @@ module.exports = {
       "requireForBlockBody": true
     }],
     // 箭头函数函数体风格 (from ter) http://eslint.cn/docs/rules/arrow-body-style
-    "ter-arrow-body-style": [true, "as-needed", {
-      "requireReturnForObjectLiteral": true
-    }],
+    // "ter-arrow-body-style": [true, "as-needed", {
+    //   "requireReturnForObjectLiteral": true
+    // }],
 
     /** best practices */
 

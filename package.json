@@ -1,6 +1,6 @@
 {
   "name": "@gago/tslint-config",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "gago tslint",
   "main": "tslint.json",
   "scripts": {
