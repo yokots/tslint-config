@@ -13,12 +13,12 @@ module.exports = {
     // 需要分号
     "semicolon": [true, "always"],
     // 数组，对象需要尾逗号，单行除外
-    "trailing-comma": [true, {
-      "multiline": "always",
-      "singleline": "never"
-    }],
+    // "trailing-comma": [true, {
+    //   "multiline": "always",
+    //   "singleline": "never"
+    // }],
     // 字符串使用单引号，在 jsx 中使用双引号
-    "quotemark": [true, "single", "jsx-double"],
+    "quotemark": [true, "double", "jsx-double"],
     // 接口定义使用分号分隔
     "type-literal-delimiter": true,
 

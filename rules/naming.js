@@ -39,10 +39,10 @@ module.exports = {
     "no-duplicate-super": true,
 
     // 可推断的简单类型不需要类型声明
-    "no-inferrable-types": [true, "ignore-params"],
+    // "no-inferrable-types": [true, "ignore-params"],
     // 声明数组的方式 number[] not Array<number>
     "array-type": [true, "array-simple"], // immutable
-    // 简写为函数类型 https://github.com/palantir/tslint/blob/master/test/rules/callable-types/test.ts.lint
+    // TODO: 简写为函数类型 https://github.com/palantir/tslint/blob/master/test/rules/callable-types/test.ts.lint
     "callable-types": true,
     // prefer foo(): void over foo: () => void
     "prefer-method-signature": true,
@@ -56,7 +56,7 @@ module.exports = {
     "interface-over-type-literal": true, // immutable
 
     // 使用 as 断言 (x as string).length not (<string>x).length
-    "no-angle-bracket-type-assertion": true,
+    "no-angle-bracket-type-assertion": false,
     // 禁止不必要的类型断言
     "no-unnecessary-type-assertion": true,
     // https://github.com/palantir/tslint/blob/master/test/rules/no-object-literal-type-assertion/test.ts.lint
