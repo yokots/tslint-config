@@ -39,6 +39,9 @@ module.exports = {
     // ts 中多余的文档
     // "no-redundata-jsdoc": true,
     // 检查 jsdoc 的格式 https://palantir.github.io/tslint/rules/jsdoc-format/
-    "jsdoc-format": [true, "check-multiline-start"],
+    "jsdoc-format": {
+      "options": [true, "check-multiline-start"],
+      "severity": "warning"
+    }
   }
 };
