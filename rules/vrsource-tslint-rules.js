@@ -6,7 +6,7 @@ module.exports = {
   "rules": {
     /** style */
     // https://github.com/vrsource/vrsource-tslint-rules/blob/master/test/rules/multiline-arrow/default/test.ts.lint
-    "multiline-arrow": [true, "require-parens", "require-block"],
+    // "multiline-arrow": [true, "require-parens", "require-block"],
 
     /** best practices */
 
