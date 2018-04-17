@@ -14,7 +14,7 @@ module.exports = {
     "prefer-literal": [true, "object", "function", "array"],
 
     // 条件表达式要加括号 (from vr)
-    "conditional-expression-parens": true,
+    // "conditional-expression-parens": true,
 
     // 最多有3个参数，当参数过多时，考虑传递对象或数组 (from vr)
     "max-params": [true, 3],
