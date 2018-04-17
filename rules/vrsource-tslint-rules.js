@@ -17,6 +17,6 @@ module.exports = {
     // "conditional-expression-parens": true,
 
     // 最多有3个参数，当参数过多时，考虑传递对象或数组 (from vr)
-    "max-params": [true, 3],
+    "max-params": [true, 5],
   }
 }

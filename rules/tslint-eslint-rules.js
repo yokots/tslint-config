@@ -5,7 +5,10 @@ module.exports = {
     /** comment */
 
     // 强制使用有效的 jsdoc，(from ter) http://eslint.cn/docs/rules/valid-jsdoc
-    "valid-jsdoc": true,
+    "valid-jsdoc": {
+      "options": [true],
+      "severity": "off"
+    },
 
     /** style */
 
@@ -63,7 +66,7 @@ module.exports = {
     }],
     // 箭头函数函数体风格 (from ter) http://eslint.cn/docs/rules/arrow-body-style
     "ter-arrow-body-style": [true, "as-needed", {
-      "requireReturnForObjectLiteral": false
+      "requireReturnForObjectLiteral": true
     }],
 
     /** best practices */
