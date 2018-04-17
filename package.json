@@ -1,0 +1,25 @@
+{
+  "name": "@gago/tslint-config",
+  "version": "0.1.0",
+  "description": "gago tslint",
+  "main": "tslint.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tslint"
+  ],
+  "author": "wanghaodong",
+  "license": "MIT",
+  "dependencies": {
+    "tslint-consistent-codestyle": "^1.13.0",
+    "tslint-eslint-rules": "^5.1.0",
+    "tslint-react": "^3.5.1",
+    "typescript": "^2.8.1",
+    "vrsource-tslint-rules": "^5.8.2"
+  },
+  "peerDependencies": {
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  }
+}
