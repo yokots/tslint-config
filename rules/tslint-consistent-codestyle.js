@@ -22,7 +22,7 @@ module.exports = {
       {
         "type": "variable",
         "modifiers": ["global", "const"],
-        "format": ["UPPER_CASE"]
+        "format": ["UPPER_CASE", "camelCase"]
       },
       {
         "type": "variable",
