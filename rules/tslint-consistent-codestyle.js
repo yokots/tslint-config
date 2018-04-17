@@ -51,7 +51,7 @@ module.exports = {
     /** best practices */
 
     // https://github.com/ajafff/tslint-consistent-codestyle/blob/master/docs/early-exit.md
-    "early-exit": true,
+    "early-exit": [true, {"max-length": 5}],
     // https://github.com/ajafff/tslint-consistent-codestyle/blob/master/docs/no-accessor-recursion.md
     "no-accessor-recursion": true,
     // 禁止可合并的条件判断
