@@ -88,7 +88,7 @@ module.exports = {
     // 使用废弃的方法时警告
     "deprecation": {
       "options": [true],
-      "severity": "warning"
+      "severity": "off"
     }, // type-check,
   }
 }

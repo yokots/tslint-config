@@ -30,7 +30,7 @@ module.exports = {
           "location": "all"
         }
       }],
-      "severity": "warning"
+      "severity": "off"
     },
     "file-header": {
       "options": [true, "copyright", "/** @copyright (c)2018-present, Gago, Inc. */"],
@@ -41,7 +41,7 @@ module.exports = {
     // 检查 jsdoc 的格式 https://palantir.github.io/tslint/rules/jsdoc-format/
     "jsdoc-format": {
       "options": [true, "check-multiline-start"],
-      "severity": "warning"
+      "severity": "off"
     }
   }
 };

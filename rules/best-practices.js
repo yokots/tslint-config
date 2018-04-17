@@ -17,7 +17,7 @@ module.exports = {
     // https://github.com/palantir/tslint/blob/master/test/rules/no-inferred-empty-object-type/test.ts.lint
     "no-inferred-empty-object-type": {
       "options": [true],
-      "severity": "warning",
+      "severity": "off",
     }, // type-check
 
     // 禁止 void 表达式
@@ -31,7 +31,7 @@ module.exports = {
     // 禁止出现没有明确含义的数字，最好由常量代替
     "no-magic-numbers": {
       "options": [true, -1, 0, 1, 2, 10, 100],
-      "severity": "warning",
+      "severity": "off",
     },
     // 加号两边只能同是数字或字符串
     "restrict-plus-operands": true, // type-check
@@ -70,7 +70,7 @@ module.exports = {
     // 使用条件表达式 (strict)
     "prefer-conditional-expression": {
       "options": [true],
-      "severity": "warning"
+      "severity": "off"
     },
     // 使用对象扩展运算符而不是 Object.assign()
     "prefer-object-spread": true,
@@ -106,7 +106,7 @@ module.exports = {
     // https://palantir.github.io/tslint/rules/prefer-switch/
     "prefer-switch": {
       "options": [true],
-      "severity": "warning"
+      "severity": "off"
     },
 
     "no-unnecessary-callback-wrapper": true,

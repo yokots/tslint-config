@@ -3,17 +3,17 @@ module.exports = {
     // 禁止 import 不在 package.json 中的 dependencies
     "no-implicit-dependencies": {
       "options": [true, "dev"],
-      "severity": "warning"
+      "severity": "off"
     },
     // 禁止使用默认导出
     "no-default-export": {
       "options": [true],
-      "severity": "warning"
+      "severity": "off"
     },
     // 禁止从子模块导入
     "no-submodule-imports": {
       "options": [true, "@angular", "zone.js", "rxjs", "ngx-color", "brace"],
-      "severity": "warning"
+      "severity": "off"
     },
     // 引入命名的默认导出时名字要和导出的名字一致
     "match-default-export-name": true, // type-check
@@ -49,7 +49,7 @@ module.exports = {
     // 禁止有副作用的导入
     "no-import-side-effect": {
       "options": [true],
-      "severity": "warning"
+      "severity": "off"
     },
   }
 };
