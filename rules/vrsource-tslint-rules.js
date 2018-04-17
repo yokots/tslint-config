@@ -1,5 +1,8 @@
+var path = require('path');
+var vrRules = path.join(process.cwd(), 'node_modules/vrsource-tslint-rules/rules');
+
 module.exports = {
-  "rulesDirectory": ["../node_modules/vrsource-tslint-rules/rules"],
+  "rulesDirectory": [vrRules],
   "rules": {
     /** style */
     // https://github.com/vrsource/vrsource-tslint-rules/blob/master/test/rules/multiline-arrow/default/test.ts.lint
