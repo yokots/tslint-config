@@ -22,16 +22,16 @@ module.exports = {
       {
         "type": "variable",
         "modifiers": ["global", "const"],
-        "format": ["UPPER_CASE"]
+        "format": ["UPPER_CASE", "PascalCase"]
       },
       {
         "type": "variable",
         "modifiers": ["export", "const"],
-        "format": ["UPPER_CASE"]
+        "format": ["UPPER_CASE", "PascalCase"]
       },
       {
         "type": "functionVariable",
-        "format": ["camelCase"]
+        "format": ["camelCase", "PascalCase"]
       },
       {
         "type": "parameter",

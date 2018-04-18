@@ -1,6 +1,6 @@
 {
-  "name": "@yoko/tslint-config",
-  "version": "0.5.3",
+  "name": "@yoko/tslint-config-react",
+  "version": "1.0.0",
   "description": "yoko tslint",
   "main": "tslint.json",
   "keywords": [
@@ -11,6 +11,7 @@
   "dependencies": {
     "tslint-consistent-codestyle": "^1.14.1",
     "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
     "vrsource-tslint-rules": "^6.0.0"
   },
   "devDependencies": {

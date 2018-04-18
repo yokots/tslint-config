@@ -3,12 +3,12 @@
 
 ## Usage:
 
-  - ```npm install tslint typescript @yoko/tslint-config -D```
+  - ```npm install tslint typescript @yoko/tslint-config-react -D```
 
   - 在项目目录下新建 tslint.json
   ```json
     {
-      "extends": ["@yoko/tslint-config"],
+      "extends": ["@yoko/tslint-config-react"],
       "rules": {
         // 覆盖默认规则
       },
@@ -22,7 +22,7 @@
     }
   ```
 
-  - ```npx tslint src/**/*.ts -p . -t stylish``` (适用于 npm v5.2 以上, 错误较少可使用 -t codeFrame)
+  - ```npx tslint src/**/*.ts src/**/*/tsx -p . -t stylish``` (适用于 npm v5.2 以上, 错误较少可使用 -t codeFrame)
 
 # 强烈建议
 
