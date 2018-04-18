@@ -21,7 +21,7 @@
 
 ## Usage:
 
-  - npm install tslint typescript @gago/tslint-config
+  - npm install tslint typescript @gago/tslint-config -D
 
   - 在项目目录下新建 tslint.json
   ```json
