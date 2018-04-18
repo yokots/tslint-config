@@ -23,7 +23,7 @@ module.exports = {
     "type-literal-delimiter": true,
 
     // 禁止空的代码块
-    "no-empty": true,
+    "no-empty": [true, "allow-empty-catch"],
     // 文件末尾以空行结束
     "eofline": true,
     // 不要有连续的空行
