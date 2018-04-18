@@ -21,12 +21,15 @@
 
 ## Usage:
 
-  - npm install tslint typescript @gago/tslint-config -D
+  - ```npm install tslint typescript @gago/tslint-config -D```
 
   - 在项目目录下新建 tslint.json
   ```json
     {
       "extends": ["@gago/tslint-config"],
+      "rules": {
+        // 覆盖默认规则
+      },
       "linterOptions": {
         "exclude": [
           "src/**/*.spec.ts",
@@ -37,7 +40,7 @@
     }
   ```
 
-  - npx tslint src/**/*.ts -p . -t stylish (适用于 npm v5.2 以上, 错误较少可使用 -t codeFrame)
+  - ```npx tslint src/**/*.ts -p . -t stylish``` (适用于 npm v5.2 以上, 错误较少可使用 -t codeFrame)
 
 # 强烈建议
 

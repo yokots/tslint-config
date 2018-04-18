@@ -56,7 +56,7 @@ module.exports = {
     "interface-over-type-literal": true, // immutable
 
     // 使用 as 断言 (x as string).length not (<string>x).length
-    "no-angle-bracket-type-assertion": false,
+    // "no-angle-bracket-type-assertion": false,
     // 禁止不必要的类型断言
     "no-unnecessary-type-assertion": true,
     // https://github.com/palantir/tslint/blob/master/test/rules/no-object-literal-type-assertion/test.ts.lint

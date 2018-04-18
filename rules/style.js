@@ -18,7 +18,7 @@ module.exports = {
     //   "singleline": "never"
     // }],
     // 字符串使用单引号，在 jsx 中使用双引号
-    "quotemark": [true, "double", "jsx-double"],
+    "quotemark": [true, "double"],
     // 接口定义使用分号分隔
     "type-literal-delimiter": true,
 
