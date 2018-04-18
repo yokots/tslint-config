@@ -1,6 +1,6 @@
 {
-  "name": "@yoko/tslint-config",
-  "version": "0.5.3",
+  "name": "@yoko/tslint-config-angular",
+  "version": "1.0.0",
   "description": "yoko tslint",
   "main": "tslint.json",
   "keywords": [
@@ -9,6 +9,7 @@
   "author": "yokots",
   "license": "MIT",
   "dependencies": {
+    "codelyzer": "^4.5.0",
     "tslint-consistent-codestyle": "^1.14.1",
     "tslint-eslint-rules": "^5.4.0",
     "vrsource-tslint-rules": "^6.0.0"

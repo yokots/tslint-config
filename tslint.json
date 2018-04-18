@@ -5,6 +5,7 @@
     "./rules/naming",
     "./rules/style",
     "./rules/best-practices",
+    "./rules/angular",
     "./rules/tslint-consistent-codestyle",
     "./rules/tslint-eslint-rules",
     "./rules/vrsource-tslint-rules"
