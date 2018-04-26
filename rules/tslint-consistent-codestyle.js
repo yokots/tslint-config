@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         "type": "parameter",
-        "format": ["camelCase", "PascaCase"]
+        "format": ["camelCase", "PascalCase"]
       },
       {
         "type": "parameter",
