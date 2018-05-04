@@ -124,7 +124,12 @@ module.exports = {
     // 禁止返回 await 语句
     "no-return-await": true,
     // 返回 promise 的函数明确用 async 标记
-    "promise-function-async": true, // type-check
+    "promise-function-async": [
+      true,
+      "check-function-declaration",
+      "check-function-expression",
+      "check-method-declaration"
+    ], // type-check
     // await 语句后只等待 Promise
     "await-promise": true, // type-check
     // 返回 promise 的函数必须得到处理
