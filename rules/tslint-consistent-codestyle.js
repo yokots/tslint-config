@@ -66,7 +66,5 @@ module.exports = {
     "parameter-properties": [true, "leading", "member-access"],
     // 使用常量枚举
     // "prefer-const-enum": true, // 好像暂时不起作用
-    // https://github.com/ajafff/tslint-consistent-codestyle/blob/master/docs/prefer-while.md
-    "prefer-while": true,
   }
 }
