@@ -17,7 +17,7 @@ module.exports = {
     // 禁止多余的分号 (from ter)
     "no-extra-semi": true,
     // 变量声明之后加一个空行 have a bug
-    // "ter-newline-after-var": [true, "always"],
+    "ter-newline-after-var": [true, "always"],
     // 使用两个空格缩进 (from ter)
     "ter-indent": [true, 2, {
       "SwitchCase": 1,
@@ -71,6 +71,12 @@ module.exports = {
 
     /** best practices */
 
+    // 禁止使用 __proto__
+    "ter-no-proto": true,
+    // 禁止使用 href="javascript:void(0)"
+    "ter-no-script-url": true,
+    // 不要与自身相比
+    "ter-no-self-compare": true,
     // 禁止不必要的布尔类型转换 (from ter)  Boolean(true)
     "no-extra-boolean-cast": true,
     // 禁止在条件中使用常量表达式 (from ter) if (false) while(true)
