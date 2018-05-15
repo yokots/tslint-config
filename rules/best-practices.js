@@ -73,7 +73,7 @@ module.exports = {
       "severity": "off"
     },
     // 使用对象扩展运算符而不是 Object.assign()
-    "prefer-object-spread": true,
+    "prefer-object-spread": false,
     // 使用模板字符串
     "prefer-template": [true, "allow-single-concat"],
     // https://palantir.github.io/tslint/rules/prefer-while/
