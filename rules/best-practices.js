@@ -80,7 +80,7 @@ module.exports = {
     "prefer-while": true,
 
     // disallow obj["property"] , should be obj.property
-    "no-string-literal": true,
+    "no-string-literal": false,
     // https://palantir.github.io/tslint/rules/only-arrow-functions/
     "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
 
