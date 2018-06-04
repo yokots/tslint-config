@@ -1,6 +1,6 @@
 {
   "name": "@gago/tslint-config",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "gago tslint",
   "main": "tslint.json",
   "scripts": {
@@ -16,8 +16,12 @@
     "tslint-eslint-rules": "^5.3.1",
     "vrsource-tslint-rules": "^5.8.2"
   },
+  "devDependencies": {
+    "tslint": "~5.10.0",
+    "typescript": ">=2.7.0"
+  },
   "peerDependencies": {
     "tslint": "~5.10.0",
-    "typescript": "2.7.x || 2.8.x"
+    "typescript": ">=2.7.0"
   }
 }
