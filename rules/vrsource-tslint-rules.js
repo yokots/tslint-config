@@ -1,5 +1,8 @@
 var path = require('path');
-var vrRules = path.join(process.cwd(), 'node_modules/vrsource-tslint-rules/rules');
+var modulePath = require.resolve('vrsource-tslint-rules');
+// var vrRules = path.join(process.cwd(), 'node_modules/vrsource-tslint-rules/rules');
+var vrRules = path.join(path.dirname(modulePath), "rules");
+
 
 module.exports = {
   "rulesDirectory": [vrRules],
