@@ -1,5 +1,7 @@
 module.exports = {
   "rules": {
+    // 文件名格式
+    "file-name-casing": "kebab-case",
     // enforces utf-8 file encoding
     "encoding": true,
     // 换行符

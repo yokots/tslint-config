@@ -17,7 +17,7 @@ module.exports = {
     // 禁止多余的分号 (from ter)
     "no-extra-semi": true,
     // 变量声明之后加一个空行 have a bug
-    "ter-newline-after-var": [true, "always"],
+    // "ter-newline-after-var": [true, "always"],
     // 使用两个空格缩进 (from ter)
     "ter-indent": [true, 2, {
       "SwitchCase": 1,
