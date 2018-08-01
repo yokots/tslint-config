@@ -15,7 +15,7 @@ module.exports = {
       {
         "type": "variable",
         "modifiers": ["local"],
-        "format": ["camelCase"],
+        "format": ["camelCase", "PascalCase"],
         "leadingUnderscore": "allow",
         "final": true,
       },
