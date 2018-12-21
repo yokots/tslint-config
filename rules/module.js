@@ -1,15 +1,9 @@
 module.exports = {
   rules: {
     // 禁止 import 不在 package.json 中的 dependencies
-    "no-implicit-dependencies": {
-      "options": [true, "dev"],
-      "severity": "off"
-    },
+    "no-implicit-dependencies": [true, "dev"],
     // 禁止使用默认导出
-    "no-default-export": {
-      "options": [true],
-      "severity": "off"
-    },
+    "no-default-export": true,
     // 禁止从子模块导入
     "no-submodule-imports": {
       "options": [true, "@angular", "zone.js", "rxjs", "ngx-color", "brace"],

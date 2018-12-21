@@ -17,10 +17,7 @@ module.exports = {
     // 禁止非空断言 foo!.bar
     "no-non-null-assertion": true,
     // https://github.com/palantir/tslint/blob/master/test/rules/no-inferred-empty-object-type/test.ts.lint
-    "no-inferred-empty-object-type": {
-      "options": [true],
-      "severity": "off",
-    }, // type-check
+    "no-inferred-empty-object-type": true,
 
     // 禁止 void 表达式
     "no-void-expression": [true, "ignore-arrow-function-shorthand"],
@@ -31,13 +28,10 @@ module.exports = {
     // 严格等
     "triple-equals": true,
     // 禁止出现没有明确含义的数字，最好由常量代替
-    "no-magic-numbers": {
-      "options": [true, -1, 0, 1, 2, 10, 100],
-      "severity": "off",
-    },
+    "no-magic-numbers": [true, -1, 0, 1, 2, 10, 100],
     // 加号两边只能同是数字或字符串
     "restrict-plus-operands": true, // type-check
-    // true === flag 'red' === colorfalse
+    // true === flag 'red' === color false
     "binary-expression-operand-order": true,
     // 使用 isNaN()
     "use-isnan": true,
@@ -71,12 +65,9 @@ module.exports = {
     // 禁止未使用的表达式
     "no-unused-expression": [true, "allow-new", "allow-fast-null-checks"],
     // 使用条件表达式 (strict)
-    "prefer-conditional-expression": {
-      "options": [true],
-      "severity": "off"
-    },
+    "prefer-conditional-expression": true,
     // 使用对象扩展运算符而不是 Object.assign()
-    "prefer-object-spread": false,
+    "prefer-object-spread": true,
     // 使用模板字符串
     "prefer-template": [true, "allow-single-concat"],
     // https://palantir.github.io/tslint/rules/prefer-while/
@@ -85,7 +76,7 @@ module.exports = {
     "increment-decrement": [true, "allow-post"],
 
     // disallow obj["property"] , should be obj.property
-    "no-string-literal": false,
+    "no-string-literal": true,
     // https://palantir.github.io/tslint/rules/only-arrow-functions/
     "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
 
@@ -111,10 +102,7 @@ module.exports = {
     // switch 语句要有 default
     "switch-default": true,
     // https://palantir.github.io/tslint/rules/prefer-switch/
-    "prefer-switch": {
-      "options": [true],
-      "severity": "off"
-    },
+    "prefer-switch": true,
 
     "no-unnecessary-callback-wrapper": true,
 
