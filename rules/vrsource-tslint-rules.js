@@ -1,11 +1,5 @@
-var path = require('path');
-var modulePath = require.resolve('vrsource-tslint-rules');
-// var vrRules = path.join(process.cwd(), 'node_modules/vrsource-tslint-rules/rules');
-var vrRules = path.join(path.dirname(modulePath), "rules");
-
-
 module.exports = {
-  "rulesDirectory": [vrRules],
+  "extends": ["vrsource-tslint-rules"],
   "rules": {
     /** style */
     // https://github.com/vrsource/vrsource-tslint-rules/blob/master/test/rules/multiline-arrow/default/test.ts.lint
@@ -13,13 +7,13 @@ module.exports = {
 
     /** best practices */
 
-    // Flags locations where code calls "new Object()", "new Array()", "new Function()"" (from vr)
+    // Flags locations where code calls "new Object()", "new Array()", "new Function()""
     "prefer-literal": [true, "object", "function", "array"],
 
-    // 条件表达式要加括号 (from vr)
+    // 条件表达式要加括号
     // "conditional-expression-parens": true,
 
-    // 最多有3个参数，当参数过多时，考虑传递对象或数组 (from vr)
-    "max-params": [true, 5],
+    // 最多有3个参数，当参数过多时，考虑传递对象或数组
+    "max-params": [true, 3],
   }
 }

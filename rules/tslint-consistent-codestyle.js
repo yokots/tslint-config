@@ -22,12 +22,12 @@ module.exports = {
       {
         "type": "variable",
         "modifiers": ["global", "const"],
-        "format": ["UPPER_CASE", "camelCase", "PascalCase"]
+        "format": ["UPPER_CASE"]
       },
       {
         "type": "variable",
         "modifiers": ["export", "const"],
-        "format": ["UPPER_CASE", "camelCase", "PascalCase"]
+        "format": ["UPPER_CASE"]
       },
       {
         "type": "functionVariable",
@@ -36,6 +36,12 @@ module.exports = {
       {
         "type": "parameter",
         "format": ["camelCase"]
+      },
+      {
+        "type": "parameter",
+        "modifiers": ["unused"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
       },
       {
         "type": "type",
@@ -49,6 +55,10 @@ module.exports = {
 
 
     /** best practices */
+    // https://github.com/ajafff/tslint-consistent-codestyle/blob/master/docs/no-unused.md
+    // "no-unused": true,
+
+    "no-var-before-return": [true, "allow-destructuring"],
 
     // https://github.com/ajafff/tslint-consistent-codestyle/blob/master/docs/early-exit.md
     "early-exit": [true, {"max-length": 5}],
@@ -65,6 +75,6 @@ module.exports = {
     // 参数属性
     "parameter-properties": [true, "leading", "member-access"],
     // 使用常量枚举
-    // "prefer-const-enum": true, // 好像暂时不起作用
+    "prefer-const-enum": true,
   }
 }

@@ -8,19 +8,19 @@ module.exports = {
     "linebreak-style": [true, "LF"],
 
     // 一个文件一个类
-    "max-classes-per-file": [true, 1], // 讨论
+    "max-classes-per-file": [true, 1],
     // 一个文件控制在400行代码之内
-    "max-file-line-count": [true, 400], // 讨论
+    "max-file-line-count": [true, 400],
 
     // 需要分号
     "semicolon": [true, "always"],
     // 数组，对象需要尾逗号，单行除外
-    // "trailing-comma": [true, {
-    //   "multiline": "always",
-    //   "singleline": "never"
-    // }],
+    "trailing-comma": [true, {
+      "multiline": "always",
+      "singleline": "never"
+    }],
     // 字符串使用单引号，在 jsx 中使用双引号
-    "quotemark": [true, "double"],
+    "quotemark": [true, "single"],
     // 接口定义使用分号分隔
     "type-literal-delimiter": true,
 
@@ -42,10 +42,12 @@ module.exports = {
       "check-module",
       "check-operator",
       "check-separator",
+      "check-rest-spread",
       "check-type",
-      "check-typecast",
+      // "check-typecast",
       "check-type-operator",
-      "check-preblock"
+      "check-preblock",
+      "check-postbrace"
     ],
     // 指定 type 时，冒号前不要空格，冒号需要一个空格
     "typedef-whitespace": [true, {

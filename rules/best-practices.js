@@ -11,6 +11,8 @@ module.exports = {
     "no-debugger": true,
     // 禁止使用 eval 语句
     "no-eval": true,
+    // 禁止使用 Function 构造函数
+    "function-constructor": true,
 
     // 禁止非空断言 foo!.bar
     "no-non-null-assertion": true,
@@ -57,14 +59,15 @@ module.exports = {
     "no-boolean-literal-compare": true, // type-check
     // 严格的布尔表达式 const str = '', if (str) // bad if (str === '') // good
     "strict-boolean-expressions": [true, "allow-null-union", "allow-undefined-union"], // type-check
+    // 禁止空的 constructor
+    "unnecessary-constructor": true,
+    "unnecessary-bind": true,
 
     // https://github.com/palantir/tslint/blob/master/test/rules/no-unsafe-any/test.ts.lint
     // "no-unsafe-any": true, // 好像有 bug
 
     // https://palantir.github.io/tslint/rules/no-unsafe-finally/
     "no-unsafe-finally": true,
-    // 禁止未使用的变量
-    "no-unused-variable": true,
     // 禁止未使用的表达式
     "no-unused-expression": [true, "allow-new", "allow-fast-null-checks"],
     // 使用条件表达式 (strict)
@@ -78,6 +81,8 @@ module.exports = {
     "prefer-template": [true, "allow-single-concat"],
     // https://palantir.github.io/tslint/rules/prefer-while/
     "prefer-while": true,
+    // 使用 += 1 代替 ++i
+    "increment-decrement": [true, "allow-post"],
 
     // disallow obj["property"] , should be obj.property
     "no-string-literal": false,
@@ -119,12 +124,7 @@ module.exports = {
     // 禁止返回 await 语句
     "no-return-await": true,
     // 返回 promise 的函数明确用 async 标记
-    "promise-function-async": [
-      true,
-      "check-function-declaration",
-      "check-function-expression",
-      "check-method-declaration"
-    ], // type-check
+    "promise-function-async": true, // type-check
     // await 语句后只等待 Promise
     "await-promise": true, // type-check
     // 返回 promise 的函数必须得到处理

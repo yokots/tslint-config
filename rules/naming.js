@@ -39,7 +39,7 @@ module.exports = {
     "no-duplicate-super": true,
 
     // 可推断的简单类型不需要类型声明
-    // "no-inferrable-types": [true, "ignore-params"],
+    "no-inferrable-types": [true, "ignore-params"],
     // 声明数组的方式 number[] not Array<number>
     "array-type": [true, "array-simple"], // immutable
     // TODO: 简写为函数类型 https://github.com/palantir/tslint/blob/master/test/rules/callable-types/test.ts.lint
@@ -79,7 +79,7 @@ module.exports = {
       "options": [
         true,
         "ignore-case",
-        "match-delcaration-order",
+        "match-declaration-order",
         "shorthand-first",
       ],
       "severity": "off"

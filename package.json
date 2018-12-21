@@ -1,27 +1,24 @@
 {
-  "name": "@gago/tslint-config",
+  "name": "@yoko/tslint-config",
   "version": "0.5.3",
-  "description": "gago tslint",
+  "description": "yoko tslint",
   "main": "tslint.json",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "tslint"
   ],
-  "author": "wanghaodong",
+  "author": "yokots",
   "license": "MIT",
   "dependencies": {
-    "tslint-consistent-codestyle": "^1.13.3",
-    "tslint-eslint-rules": "^5.3.1",
-    "vrsource-tslint-rules": "^5.8.2"
+    "tslint-consistent-codestyle": "^1.14.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "vrsource-tslint-rules": "^6.0.0"
   },
   "devDependencies": {
-    "tslint": "^5.11.0",
-    "typescript": ">=2.7.0"
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
   },
   "peerDependencies": {
-    "tslint": "^5.11.0",
+    "tslint": "^5.12.0",
     "typescript": ">=2.7.0"
   }
 }

@@ -1,17 +1,14 @@
 
-## TODO
-* [ ] 自定义 tslint rules
-
-## [Style Guide](http://git.azure.gagogroup.cn/efficiency/javascript-style-guide)
+## [Style Guide](https://github.com/yokots/typescript-style-guide)
 
 ## Usage:
 
-  - ```npm install tslint typescript @gago/tslint-config -D```
+  - ```npm install tslint typescript @yoko/tslint-config -D```
 
   - 在项目目录下新建 tslint.json
   ```json
     {
-      "extends": ["@gago/tslint-config"],
+      "extends": ["@yoko/tslint-config"],
       "rules": {
         // 覆盖默认规则
       },

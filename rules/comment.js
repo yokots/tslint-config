@@ -1,5 +1,6 @@
 module.exports = {
   rules: {
+    "comment-type": [true, "doc", "singleline"],
     // 单行注释双斜杠之后要保留一个空格。
     "comment-format": [true, "check-space", {
       "ignore-words": [
@@ -33,7 +34,7 @@ module.exports = {
       "severity": "off"
     },
     "file-header": {
-      "options": [true, "copyright", "/** @copyright (c)2018-present, Gago, Inc. */"],
+      "options": [true, "copyright", "/** @copyright (c)2018-present, Gago, Inc. */", "enforce-trailing-newline"],
       "severity": "off"
     },
     // ts 中多余的文档
