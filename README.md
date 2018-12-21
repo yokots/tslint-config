@@ -29,7 +29,7 @@
   > 每个人在自己的工程中配置 pre-commit 钩子，在提交代码之前进行检查
 
   * [husky](https://github.com/typicode/husky) 用 node 配置钩子
-  * [lint-staged](https://github.com/okonet/lint-staged) 只检查将要提交的代码
+  * [lint-staged](https://github.com/okonet/lint-staged) 只检查将要提交的代码
   * [commitlint](https://github.com/marionebl/commitlint) 检查 commit 规范
 
   配置完后类似于以下这个样子
