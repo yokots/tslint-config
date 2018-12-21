@@ -86,9 +86,6 @@ module.exports = {
     },
 
     // 使用废弃的方法时警告
-    "deprecation": {
-      "options": [true],
-      "severity": "off"
-    }, // type-check,
+    "deprecation": true
   }
 }
