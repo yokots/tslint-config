@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": ["vrsource-tslint-rules"],
+  "rulesDirectory": ["vrsource-tslint-rules/rules"],
   "rules": {
     /** style */
     // https://github.com/vrsource/vrsource-tslint-rules/blob/master/test/rules/multiline-arrow/default/test.ts.lint
