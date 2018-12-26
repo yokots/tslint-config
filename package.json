@@ -1,12 +1,15 @@
 {
-  "name": "@yoko/tslint-config-react",
+  "name": "@yokots/tslint-config-react",
   "version": "1.0.0",
   "description": "yoko tslint",
   "main": "tslint.json",
   "keywords": [
     "tslint"
   ],
-  "author": "yokots",
+  "author": {
+    "name": "yokots",
+    "email": "hd.wang1993@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "tslint-consistent-codestyle": "^1.14.1",
