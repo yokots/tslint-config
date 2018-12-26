@@ -1,12 +1,15 @@
 {
-  "name": "@yoko/tslint-config-angular",
+  "name": "@yokots/tslint-config-angular",
   "version": "1.0.0",
   "description": "yoko tslint",
   "main": "tslint.json",
   "keywords": [
     "tslint"
   ],
-  "author": "yokots",
+  "author": {
+    "name": "yokots",
+    "email": "hd.wang1993@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "codelyzer": "^4.5.0",
