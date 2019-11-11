@@ -1,4 +1,5 @@
 {
+  "rulesDirectory": "./custom-rules",
   "extends": [
     "./rules/module",
     "./rules/comment",
@@ -9,5 +10,8 @@
     "./rules/tslint-consistent-codestyle",
     "./rules/tslint-eslint-rules",
     "./rules/vrsource-tslint-rules"
-  ]
+  ],
+  "rules": {
+    "lower-case-file-name": true
+  }
 }
