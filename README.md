@@ -10,8 +10,8 @@
     {
       "extends": ["@gago/tslint-config-angular"],
       "rules": {
-        "component-selector": ["element", ["app", "your-prefix"], "kebab-case"],
-        "directive-selector": ["attribute", ["app", "your-prefix"], "camelCase"]
+        "component-selector": [true, "element", ["your-prefix"], "kebab-case"],
+        "directive-selector": [true, "attribute", ["your-prefix"], "camelCase"],
         // 覆盖默认规则
       },
       "linterOptions": {

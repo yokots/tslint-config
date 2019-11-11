@@ -3,8 +3,6 @@ module.exports = {
 
     // 如果变量值不变，使用 const
     "prefer-const": true,
-    // 声明之前禁止使用
-    "no-use-before-declare": true, // type-check
     // 禁止使用 var 声明变量
     "no-var-keyword": true,
     // 一个变量一个声明语句
@@ -47,7 +45,7 @@ module.exports = {
     // prefer foo(): void over foo: () => void
     "prefer-method-signature": true,
     // 函数重载签名连续放置
-    "adjacent-overload-signatures": true,
+    "adjacent-overload-signatures": [true, {"ignore-accessors": true}],
     // 合并可以合并的函数签名
     "unified-signatures": true,
     // 默认类型不用再声明类型 fn<T = number>() {} fn<number>()
@@ -60,7 +58,7 @@ module.exports = {
     // 禁止不必要的类型断言
     "no-unnecessary-type-assertion": true,
     // https://github.com/palantir/tslint/blob/master/test/rules/no-object-literal-type-assertion/test.ts.lint
-    "no-object-literal-type-assertion": true,
+    "no-object-literal-type-assertion": [true, {"allow-arguments": true}],
 
     // 使用正确的 type
     "ban-types": [true,

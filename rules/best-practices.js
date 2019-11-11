@@ -56,6 +56,8 @@ module.exports = {
     // 禁止空的 constructor
     "unnecessary-constructor": true,
     "unnecessary-bind": true,
+    "no-tautology-expression": true,
+    "static-this": true,
 
     // https://github.com/palantir/tslint/blob/master/test/rules/no-unsafe-any/test.ts.lint
     // "no-unsafe-any": true, // 好像有 bug
@@ -93,6 +95,7 @@ module.exports = {
     "prefer-for-of": true,
     // forin 循环中判断 obj.hasOwnProperty(key)
     "forin": true,
+    "no-for-in": true,
     // 不要用 for-in 循环对数组迭代
     "no-for-in-array": true, // type-check
 
@@ -117,5 +120,16 @@ module.exports = {
     "await-promise": true, // type-check
     // 返回 promise 的函数必须得到处理
     "no-floating-promises": true, // type-check
+    "no-async-without-await": true,
+    "no-promise-as-boolean": true,
+
+    "unnecessary-else": [true, {"allow-else-if": true}],
+    "no-any": [true, {"ignore-rest-args": true}],
+    "no-null-undefined-union": true,
+    "strict-comparisons": [true, {
+      "allow-object-equal-comparison": true,
+      "allow-string-order-comparison": true
+    }],
+    "invalid-void": [true, {"allow-generics": true}]
   }
 };

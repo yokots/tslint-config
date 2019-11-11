@@ -22,7 +22,7 @@ module.exports = {
       "severity": "off"
     },
     // 禁止重复引入
-    "no-duplicate-imports": true,
+    "no-duplicate-imports": [true, {"allow-namespace-imports": true}],
 
     // 不要使用 commonjs 的导入方法和 ts 的 var 导入方法
     "no-var-requires": true,

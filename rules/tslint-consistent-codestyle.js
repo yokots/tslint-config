@@ -48,8 +48,12 @@ module.exports = {
         "format": ["PascalCase"]
       },
       {
-        "type": "enumMember",
+        "type": "enum",
         "format": ["PascalCase"]
+      },
+      {
+        "type": "enumMember",
+        "format": ["UPPER_CASE"]
       },
     ],
 
@@ -66,10 +70,6 @@ module.exports = {
     "no-accessor-recursion": true,
     // 禁止可合并的条件判断
     "no-collapsible-if": true,
-    // 禁止在静态方法中使用 this
-    "no-static-this": true,
-    // 禁止不必要的 else
-    "no-unnecessary-else": true,
     // 对象字面量缩写属性靠前
     "object-shorthand-properties-first": true,
     // 参数属性
