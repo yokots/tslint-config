@@ -3,12 +3,12 @@
 
 ## Usage:
 
-  - ```npm install tslint typescript @yoko/tslint-config-angular -D```
+  - ```npm install tslint typescript @yokots/tslint-config-angular -D```
 
   - 在项目目录下新建 tslint.json
   ```json
     {
-      "extends": ["@gago/tslint-config-angular"],
+      "extends": ["@yokots/tslint-config-angular"],
       "rules": {
         "component-selector": [true, "element", ["your-prefix"], "kebab-case"],
         "directive-selector": [true, "attribute", ["your-prefix"], "camelCase"],
