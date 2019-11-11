@@ -1,6 +1,6 @@
 {
-  "rulesDirectory": "./custom-rules",
   "extends": [
+    "./custom-rules/tslint.json",
     "./rules/module",
     "./rules/comment",
     "./rules/naming",
@@ -8,10 +8,6 @@
     "./rules/best-practices",
     "./rules/angular",
     "./rules/tslint-consistent-codestyle",
-    "./rules/tslint-eslint-rules",
-    "./rules/vrsource-tslint-rules"
-  ],
-  "rules": {
-    "lower-case-file-name": true
-  }
+    "./rules/tslint-eslint-rules"
+  ]
 }

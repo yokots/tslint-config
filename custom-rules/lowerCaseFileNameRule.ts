@@ -1,27 +1,31 @@
-// tslint:disable
+// file name should be lower case with dashes
+// "lower-case-file-name": true
+
 import * as Lint from 'tslint';
 import * as ts from 'typescript';
 import { isAbsolute, relative } from 'path';
 
-export class Rule extends Lint.Rules.AbstractRule {
-  public static FAILURE_STRING = 'File name must be lower case with dashes';
-
-  public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
-    return this.applyWithWalker(new LowerCaseFileNameRuleWalker(sourceFile, this.getOptions()));
-  }
+function getFailureString(path: string) {
+  return `File name must be lower case with dashes: ${path}`;
 }
 
 class LowerCaseFileNameRuleWalker extends Lint.RuleWalker {
   public visitSourceFile(node: ts.SourceFile) {
     const path = node.fileName;
     const fileName = isAbsolute(path) ? relative(process.cwd(), path) : path;
-    const paths = fileName.replace('.', '').split('/');
+    const paths = fileName.replace(/\./g, '').split('/');
 
-    paths.forEach((path) => {
-      if (/^[a-z]+(-[a-z]+)*$/g.test(path)) {
-        return;
+    paths.forEach((item) => {
+      if (!/^[a-z]+(-[a-z]+)*$/g.test(item)) {
+        this.addFailureAt(node.getStart(), node.getWidth(), getFailureString(item));
       }
-      this.addFailure(this.createFailure(node.getStart(), node.getWidth(), `${Rule.FAILURE_STRING}: ${path}`));
+      super.visitSourceFile(node);
     });
+  }
+}
+
+export class Rule extends Lint.Rules.AbstractRule {
+  public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
+    return this.applyWithWalker(new LowerCaseFileNameRuleWalker(sourceFile, this.getOptions()));
   }
 }

@@ -1,0 +1,9 @@
+function foo(a: number, b: string, c: boolean, d: any) {}
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     [More than max-parameters: 3]
+
+const obj = new Object();
+            ~~~~~~~~~~~~  [Prefer literal object creation]
+const arr = new Array();
+            ~~~~~~~~~~~  [Prefer literal array creation]
+const fn = new Function();
+           ~~~~~~~~~~~~~~  [Prefer literal function creation]

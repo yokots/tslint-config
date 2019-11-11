@@ -1,0 +1,9 @@
+{
+  "rulesDirectory": "./",
+  "rules": {
+    "max-classes-per-file": false,
+    "lower-case-file-name": true,
+    "prefer-literal": true,
+    "max-parameters": true
+  }
+}
