@@ -1,3 +1,4 @@
+import { experimental } from '@angular-devkit/core';
 import {
   Rule, SchematicContext, Tree, SchematicsException,
   apply, branchAndMerge, mergeWith, template, renameTemplateFiles, url,
@@ -24,6 +25,17 @@ export default function ({ prefix }: Options): Rule {
     if (!workspaceConfig) {
       throw new SchematicsException('Could not find Angular workspace configuration');
     }
+
+    const workspace: experimental.workspace.WorkspaceSchema = JSON.parse(workspaceConfig.toString());
+    Object.values(workspace.projects).forEach(project => {
+      const options = project.architect!['lint'].options;
+      project.architect!['lint'].options = Object.assign(options || {}, {
+        fix: true,
+        format: 'stylish',
+        typeCheck: true,
+      });
+    });
+    tree.overwrite('/angular.json', JSON.stringify(workspace, null, 2));
 
     if (tree.exists('/tslint.json')) {
       tree.delete('/tslint.json');
