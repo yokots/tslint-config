@@ -1,24 +1,30 @@
 {
   "name": "@yokots/tslint-config-angular",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "yoko tslint",
   "main": "tslint.json",
   "scripts": {
-    "build": "tsc -p ./custom-rules",
-    "clean": "rm ./custom-rules/*.js",
+    "build": "tsc -p .",
+    "clean": "rm ./custom-rules/*.js ./schematics/**/*.js",
     "test": "npm run build && tslint --test ./custom-rules",
-    "prepublish": "npm run test",
+    "prepublishOnly": "npm run test",
     "postpublish": "npm run clean"
   },
   "keywords": [
-    "tslint"
+    "tslint",
+    "angular",
+    "schematics"
   ],
+  "schematics": "./schematics/collection.json",
+  "homepage": "https://github.com/yokots/tslint-config/tree/angular",
   "author": {
     "name": "yokots",
     "email": "hd.wang1993@gmail.com"
   },
   "license": "MIT",
   "dependencies": {
+    "@angular-devkit/core": "^9.0.0-rc.2",
+    "@angular-devkit/schematics": "^9.0.0-rc.2",
     "codelyzer": "^5.2.0",
     "tslint-consistent-codestyle": "^1.14.1",
     "tslint-eslint-rules": "^5.4.0"

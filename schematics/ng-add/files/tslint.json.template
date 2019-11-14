@@ -1,0 +1,14 @@
+{
+  "extends": ["@yokots/tslint-config-angular"],
+  "rules": {
+    "component-selector": [true, "element", <%= prefix %>, "kebab-case"],
+    "directive-selector": [true, "attribute", <%= prefix %>, "camelCase"]
+  },
+  "linterOptions": {
+    "exclude": [
+      "src/**/*.spec.ts",
+      "**/test/**.ts",
+      "**/*.d.ts"
+    ]
+  }
+}
