@@ -5,7 +5,7 @@ import {
 } from '@angular-devkit/schematics';
 import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
 import { Schema as Options } from './schema';
-import { name, version } from '../../package.json';
+import { name, version, devDependencies } from '../../package.json';
 
 interface Dependencies {
   [key: string]: string;
@@ -43,8 +43,10 @@ export default function ({ prefix }: Options): Rule {
 
     const pkg = JSON.parse(tree.read('/package.json')!.toString());
     pkg.devDependencies[name] = `^${version}`;
+    pkg.devDependencies['tslint'] = devDependencies.tslint;
     pkg.devDependencies = sortObjectByKeys(pkg.devDependencies);
     Reflect.deleteProperty(pkg.dependencies, name);
+    Reflect.deleteProperty(pkg.devDependencies, 'codelyzer');
     tree.overwrite('/package.json', JSON.stringify(pkg, null, 2));
 
     const templateSource = apply(url('./files'), [
