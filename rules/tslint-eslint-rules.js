@@ -57,7 +57,7 @@ module.exports = {
     }],
     // 箭头函数函数体风格  http://eslint.cn/docs/rules/arrow-body-style
     "ter-arrow-body-style": [true, "as-needed", {
-      "requireReturnForObjectLiteral": true
+      "requireReturnForObjectLiteral": false
     }],
 
     /** best practices */

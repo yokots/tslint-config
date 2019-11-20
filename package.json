@@ -1,6 +1,6 @@
 {
   "name": "@yokots/tslint-config-angular",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "yoko tslint",
   "main": "tslint.json",
   "scripts": {
@@ -24,18 +24,17 @@
   "license": "MIT",
   "dependencies": {
     "codelyzer": "^5.2.0",
+    "tslint": "^5.20.1",
     "tslint-consistent-codestyle": "^1.16.0",
     "tslint-eslint-rules": "^5.4.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.7",
-    "tslint": "^5.20.1",
     "typescript": "^3.6.4"
   },
   "peerDependencies": {
     "@angular-devkit/core": "~9.0.0-rc.2",
     "@angular-devkit/schematics": "~9.0.0-rc.2",
-    "tslint": "^5.20.1",
     "typescript": "3.6.x"
   }
 }

@@ -71,7 +71,7 @@ module.exports = {
     // 禁止可合并的条件判断
     "no-collapsible-if": true,
     // 对象字面量缩写属性靠前
-    "object-shorthand-properties-first": true,
+    // "object-shorthand-properties-first": true,
     // 参数属性
     "parameter-properties": [true, "leading", "member-access"],
     // 使用常量枚举
