@@ -1,3 +1,4 @@
 custom-rules/*.ts
 custom-rules/test.ts.lint
-schematics/**/*.ts
+custom-rules/tsconfig.json
+
